@@ -8,7 +8,7 @@ import { SlackClientInterface } from "@elizaos/client-slack";
 import { TelegramClientInterface } from "@elizaos/client-telegram";
 import { TwitterClientInterface } from "@elizaos/client-twitter";
 import {
-    AgentRuntime,
+    AgentRuntime
     CacheManager,
     Character,
     Clients,
