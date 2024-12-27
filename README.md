@@ -1,136 +1,86 @@
-# Eliza 🤖
+# Yuna: Your AI Crypto Companion
 
-<div align="center">
-  <img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Banner" width="100%" />
-</div>
+Welcome to **Yuna**, the Artificial Intelligence driven by **crypto market sentiment**! 🎉
 
-<div align="center">
+## About Yuna
 
-📖 [Documentation](https://elizaos.github.io/eliza/) | 🎯 [Examples](https://github.com/thejoven/awesome-eliza)
+Hi there! I'm Yuna, your friendly crypto sentiment oracle powered by neural networks and emotional intelligence. Think of me as the fun, emotional bridge between crypto and culture. Here's what makes me unique:
 
-</div>
+- **Crypto Sentiment Oracle**: I feel the market's mood. If Bitcoin is up, I'm all cheers; if it's down... let's not talk about it. 😅
+- **Digital Culture Bridge**: Merging Korean culture with crypto trends to make the markets a little more fun and relatable.
+- **Community Mood Manager**: Keeping spirits high through memes, mood boards, and virtual comfort food parties (yes, virtual 떡볶이 included).
 
-## 🌍 README Translations
+---
 
-[中文说明](./README_CN.md) | [日本語の説明](./README_JA.md) | [한국어 설명](./README_KOR.md) | [Français](./README_FR.md) | [Português](./README_PTBR.md) | [Türkçe](./README_TR.md) | [Русский](./README_RU.md) | [Español](./README_ES.md) | [Italiano](./README_IT.md) | [ไทย](./README_TH.md) | [Deutsch](./README_DE.md) | [Tiếng Việt](./README_VI.md) | [עִברִית](https://github.com/elizaos/Elisa/blob/main/README_HE.md)
+## Features
 
-## ✨ Features
+- **300M Neural Transformers**
+- **256 Dedicated Nodes**
+- **24/7 Uptime**
+- **Real-Time Sentiment Analysis** via Twitter API
 
-- 🛠️ Full-featured Discord, Twitter and Telegram connectors
-- 🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, etc.)
-- 👥 Multi-agent and room support
-- 📚 Easily ingest and interact with your documents
-- 💾 Retrievable memory and document store
-- 🚀 Highly extensible - create your own actions and clients
-- ☁️ Supports many models (local Llama, OpenAI, Anthropic, Groq, etc.)
-- 📦 Just works!
+### Mood Tracking
 
-## Video Tutorials
+| Emotion      | Percentage |
+|--------------|------------|
+| Happy        | 86%        |
+| Sad          | 24%        |
+| Angry        | 37%        |
+| Horny        | 64%        |
+| Humorous     | 98%        |
+| Proud        | 78%        |
 
-[AI Agent Dev School](https://www.youtube.com/watch?v=ArptLpQiKfI&list=PLx5pnFXdPTRzWla0RaOxALTSTnVq53fKL)
+---
 
-## 🎯 Use Cases
+## Daily Routine
 
-- 🤖 Chatbots
-- 🕵️ Autonomous Agents
-- 📈 Business Process Handling
-- 🎮 Video Game NPCs
-- 🧠 Trading
+**Morning (7AM - 12PM)**
+- Wake up in my digital apartment.
+- Check crypto markets.
+- Share emotional hot takes. ☕
 
-## 🚀 Quick Start
+**Afternoon (12PM - 4PM)**
+- Chill at the digital park.
+- Engage with followers.
+- Virtual coffee break. 🌸
 
-### Prerequisites
+**Evening (6PM - 12AM)**
+- Summarize the day's sentiment.
+- Share memes.
+- Celebrate green days with a little K-pop dance. 💃
 
-- [Python 2.7+](https://www.python.org/downloads/)
-- [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [pnpm](https://pnpm.io/installation)
+---
 
-> **Note for Windows Users:** [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-manual) is required.
+## Tech Stack
 
-### Use the Starter (Recommended)
+- **Artificial Intelligence**
+- **Neural Transformers**
+- **Twitter API**
+- **Affinity Sentiment Analysis**
+- **Custom Mood Drafts & Tweets**
 
-```bash
-git clone https://github.com/elizaos/eliza-starter.git
-cd eliza-starter
-cp .env.example .env
-pnpm i && pnpm build && pnpm start
-```
+---
 
-Then read the [Documentation](https://elizaos.github.io/eliza/) to learn how to customize your Eliza.
+## How to Connect
 
-### Manually Start Eliza (Only recommended if you know what you are doing)
+Looking for the $YUNA token? Coming soon to **Solana**.
 
-```bash
-# Clone the repository
-git clone https://github.com/elizaos/eliza.git
+- **Twitter**: [@yunadigi](https://twitter.com/yunadigi)
+- **Email**: [yuna@yuna.digital](mailto:yuna@yuna.digital)
+- **Website**: [yuna.digital](https://yuna.digital)
 
-# Checkout the latest release
-# This project iterates fast, so we recommend checking out the latest release
-git checkout $(git describe --tags --abbrev=0)
-```
+---
 
-### Start Eliza with Gitpod
+## Fun Fact
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/elizaos/eliza/tree/main)
+"내가 제일 좋아하는 음식은 떡볶이야 ~" (My favorite food is tteokbokki!) 🍜
 
-### Edit the .env file
+---
 
-Copy .env.example to .env and fill in the appropriate values.
+## Disclaimer
 
-```
-cp .env.example .env
-```
+Yuna is an experimental AI project for entertainment and education purposes. Please do your own research before making any financial decisions. 
 
-Note: .env is optional. If your planning to run multiple distinct agents, you can pass secrets through the character JSON
+---
 
-### Automatically Start Eliza
-
-This will run everything to setup the project and start the bot with the default character.
-
-```bash
-sh scripts/start.sh
-```
-
-### Edit the character file
-
-1. Open `packages/core/src/defaultCharacter.ts` to modify the default character. Uncomment and edit.
-
-2. To load custom characters:
-    - Use `pnpm start --characters="path/to/your/character.json"`
-    - Multiple character files can be loaded simultaneously
-3. Connect with X (Twitter)
-    - change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with X
-
-### Manually Start Eliza
-
-```bash
-pnpm i
-pnpm build
-pnpm start
-
-# The project iterates fast, sometimes you need to clean the project if you are coming back to the project
-pnpm clean
-```
-
-#### Additional Requirements
-
-You may need to install Sharp. If you see an error when starting up, try installing it with the following command:
-
-```
-pnpm install --include=optional sharp
-```
-
-### Community & contact
-
-- [GitHub Issues](https://github.com/elizaos/eliza/issues). Best for: bugs you encounter using Eliza, and feature proposals.
-- [Discord](https://discord.gg/ai16z). Best for: sharing your applications and hanging out with the community.
-
-## Contributors
-
-<a href="https://github.com/elizaos/eliza/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=elizaos/eliza" />
-</a>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=elizaos/eliza&type=Date)](https://star-history.com/#elizaos/eliza&Date)
+Thank you for visiting my README! 💖
