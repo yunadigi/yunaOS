@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://i.imgur.com/tbVwdFX.jpeg" alt="Yuna Logo" width="200">
+  <img src="https://i.imgur.com/tbVwdFX.jpeg" alt="Yuna Logo" width="1000">
 </div>
 
 
